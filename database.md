@@ -1,4 +1,27 @@
-# DBMS vs RDBMS vs NoSQL
+# SQL vs NoSQL
+- SQL
+ - ACID
+ - A = Atomicity
+ - C = Consistency
+ - I = Isolation
+ - D = Durability
+- NoSQL
+
+> NoSQL 因為其特性難以保證 ACID
+
+> 由於 NoSQL 比較常被用在分散式的儲存環境，相較於 ACID，更加注重的是下面的 CAP
+
+- CAP
+ - C =  Consistency
+ - A = Availability
+ - P = Partition tolerance
+```
+將資料儲存為類似 JSON 的文件
+doucment 是 key-value 的有序集合
+資料庫中的每個doucment 不需要具有相同的數據結構
+```
+
+# MariaDB vs. MySQL vs. PostgreSQL
 
 # Database normalization
 
@@ -80,9 +103,16 @@ SELECT @var_count;
 # Design Schema
 * composite primary key 複合主鍵
 當你需要auto_increment特性的時候，你不應該再用複合主鍵，這樣喪失了auto_increment的唯一特性
-* 
+* Multiple-Column Indexes 複合索引
+建立複合索引時， Columns 的組合的順序會影響 Query是否使用 Index。
+
 # Architecture
-* Master-Slave Replication
+* Load balancing
+ * HAProxy
+ * Nginx
+ * ProxySQL
+* Read/Write Splitting 讀寫分離
+* Master-Slave Replication 主從式架構
 * Scale up
   * application
   * connection

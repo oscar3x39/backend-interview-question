@@ -57,6 +57,26 @@
   * PUT
   * DELETE
 
+### HTTP Response Status Code
+```
+1xx: Informational
+2xx: Success
+3xx: Redirection
+4xx: Client Error
+5xx: Server Error
+```
+
+### REST Specific HTTP Status Codes
+```
+200 OK
+301 Moved Permanently
+400 Bad Request
+401 Unauthorized
+403 Forbidden
+404 Not Found
+500 Internal Server Error
+```
+
 ### Singleton and Collection Resources
 資源可以是單例或是集合
 例如 customer 或者 customers 

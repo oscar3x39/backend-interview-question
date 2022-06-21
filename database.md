@@ -57,8 +57,10 @@ SELECT * FROM table1, table2 WHERE table1.id = table2.id
 ```
 * Use the EXPLAIN Function
 * MySQL Server Configuration
+
+> /my.cnf
+
 ```
-my.cnf
 query_cache_size
 max_connection
 innodb_buffer_pool_size
@@ -66,7 +68,7 @@ innodb_io_capacity
 ```
 
 # OLTP (On-Line Transaction Processing) Database
-應用 : Customer-oriented
+- 應用 : Customer-oriented
 - 回應時間 (response time) 要求較高。
 - 併發 (concurrency) 要求較多。
 - 資料處理量 (volume) 少。

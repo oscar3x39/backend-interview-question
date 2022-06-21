@@ -42,7 +42,27 @@ innodb_buffer_pool_size
 innodb_io_capacity
 ```
 
-# OLTP Database
+# OLTP (On-Line Transaction Processing) Database
+應用 : Customer-oriented
+- 回應時間 (response time) 要求較高。
+- 併發 (concurrency) 要求較多。
+- 資料處理量 (volume) 少。
+- 交易 (transaction) 完整性高。
+- 安全性 (security) 要求較高。
+
+# OLAP (On-Line Analytical Processing)
+- 應用 : Market-oriented
+- 回應時間 (response time) 要求較低。
+- 併發 (concurrency) 要求較少。
+- 資料處理量 (volume) 多。
+- 交易 (transaction) 完整性低。
+- 安全性 (security) 要求較低。
+
+# Data warehouse
+- 應用 : Subject-oriented
+- 熱資料 (Hot) 本地、快取、粒度、一致性。
+- 暖資料 (Warm) 分布、快取、複製。
+- 冷資料 (Cold) 索引、壓縮、合併、備份。
 
 # Store variable using mysql
 
@@ -56,3 +76,23 @@ SELECT @v1;
 SELECT count(*) FROM TABLE_NAME INTO @var_count;
 SELECT @var_count;
 ```
+
+# Design Schema
+* composite primary key 複合主鍵
+當你需要auto_increment特性的時候，你不應該再用複合主鍵，這樣喪失了auto_increment的唯一特性
+* 
+# Architecture
+* Master-Slave Replication
+* Scale up
+  * application
+  * connection
+  * database
+  * file system
+  * os kernel
+  * hardware
+* Scale out
+  * Replication
+  * Clustering
+  * Sharding
+  * Disaster Recovery
+  * Multi Regional Resiliency

@@ -1,3 +1,3 @@
 # Catalogue
-* [Backend](./backend.md)
-* [Database](./programming.md)
+* [Programming](./programming.md)
+* [Database](./database.md)

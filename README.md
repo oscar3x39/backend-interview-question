@@ -145,3 +145,23 @@ http://api.example.com/posts?region=USA
 http://api.example.com/posts?region=USA&brand=XYZ
 http://api.example.com/posts?region=USA&brand=XYZ&sort=installation-date
 ```
+
+# MVC
+- Model 數據模型，業務模型
+- View 數據顯示
+- Controller 控制器 連接M與V的
+
+# SPA (Single Page Application)
+單頁式應用，利用AJAX同步資料
+缺點是有較差的SEO
+
+# SSR (Server side render)
+由伺服器渲染資料
+有利於SEO
+
+# AMP (Accelerated Mobile Pages)
+加速行動網頁
+
+# PWA (Progressive Web App)
+漸進式網頁應用程式
+使用網頁也可以是APP使用

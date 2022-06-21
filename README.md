@@ -51,6 +51,12 @@
 
 # RESTful
 
+```
+用URL定位資源
+用HTTP動詞（GET,POST,DELETE,DETC）描述操作
+資源是REST的核心，重點在如何設計server與client的交互形式
+```
+
 * HTTP Methods
   * GET
   * POST

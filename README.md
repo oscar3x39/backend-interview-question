@@ -165,3 +165,7 @@ http://api.example.com/posts?region=USA&brand=XYZ&sort=installation-date
 # PWA (Progressive Web App)
 漸進式網頁應用程式
 使用網頁也可以是APP使用
+
+# DBMS vs RDBMS vs NoSQL
+
+# Database normalization
